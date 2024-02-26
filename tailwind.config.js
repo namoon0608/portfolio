@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-    content: ['./src/**/*.{js,jsx}'],
-    mode: 'jit',
+export default {
+    content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
         fontSize: {
             'head-semibold': [
@@ -202,6 +201,7 @@ module.exports = {
                 primary: '#050816',
                 secondary: '#aaa6c3',
                 tertiary: '#151030',
+                white: '#FFFFFF',
                 'black-100': '#100d25',
                 'black-200': '#090325',
                 'white-100': '#f3f3f3',
@@ -211,9 +211,7 @@ module.exports = {
             },
             screens: {
                 xs: '450px',
-            },
-            backgroundImage: {
-                'hero-pattern': "url('/src/assets/herobg.png')",
+                xxs: '320px',
             },
         },
     },
